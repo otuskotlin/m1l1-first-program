@@ -1,9 +1,15 @@
 plugins {
+    application
     kotlin("jvm") version "1.3.72"
+    id("com.github.johnrengelman.shadow") version "6.0.0"
 }
 
 group = "ru.otus.first"
 version = "1.0.0"
+
+application {
+    mainClassName = "${project.group}.FirstMainKt"
+}
 
 repositories {
     mavenCentral()
@@ -23,4 +29,5 @@ tasks {
     compileTestKotlin {
         kotlinOptions.jvmTarget = "1.8"
     }
+
 }
