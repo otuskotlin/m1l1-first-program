@@ -1,7 +1,7 @@
 plugins {
     application
-    kotlin("jvm") version "1.3.72"
-    id("com.github.johnrengelman.shadow") version "6.0.0"
+    kotlin("jvm")
+    id("com.github.johnrengelman.shadow")
 }
 
 group = "ru.otus.first"
